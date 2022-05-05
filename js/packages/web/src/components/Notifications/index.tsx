@@ -569,10 +569,11 @@ export function Notifications() {
 
   const justContent = (
     <Popover placement="bottomLeft" content={content} trigger="click">
-      <img src={'/bell.svg'} style={{ cursor: 'pointer' }} />
+      <img src={'https://img.icons8.com/emoji/2x/bell-emoji.png'} style={{ cursor: 'pointer', "height":"26px", "width":"25px","paddingRight":"1px", "borderRadius":28 }} />
       {!!notifications.length && (
         <div className="mobile-notification">{notifications.length - 1}</div>
       )}
+      <h1 className='title'>ShortGun NFT</h1>
     </Popover>
   );
 
@@ -584,6 +585,8 @@ export function Notifications() {
         style={{ backgroundColor: 'white', color: 'black' }}
       >
         {justContent}
+        {/* <img src="https://img.icons8.com/fluency/2x/right.png" style={{cursor: 'pointer', "marginLeft":"4px","height":"19px","paddingLeft":"1px", "width":"19px", "borderRadius":28}} /> */}
       </Badge>
+
     );
 }

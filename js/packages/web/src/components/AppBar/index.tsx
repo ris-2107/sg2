@@ -113,7 +113,11 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img src={'/metaplex-logo.svg'} />
+      {/* <img src={'/metaplex-logo.svg'} /> */}
+      <img src="https://static.wixstatic.com/media/ccc269_fef35fd3445e47099ff2ba432afd2ead~mv2.png/v1/fill/w_60,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Original_edited_edited_edited.png" 
+          alt="ShortGun_Logo"
+          style={{"width":"4.3rem","height":"3.2rem","paddingRight":"1px","borderRadius":3,"paddingLeft":"4px", "backgroundColor":"#121212"}}
+          />
     </Link>
   );
 };
@@ -125,7 +129,10 @@ export const AppBar = () => {
       <MobileNavbar />
       <div id="desktop-navbar">
         <div className="app-left">
-          <LogoLink />
+          <img src="https://static.wixstatic.com/media/ccc269_fef35fd3445e47099ff2ba432afd2ead~mv2.png/v1/fill/w_60,h_50,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Original_edited_edited_edited.png" 
+          alt="ShortGun_Logo"
+          style={{"width":"4.3rem","height":"3.2rem","paddingRight":"3px","borderRadius":3,"paddingLeft":"4px", "backgroundColor":"#121212"}}
+          />
           &nbsp;&nbsp;&nbsp;
           <MetaplexMenu />
         </div>

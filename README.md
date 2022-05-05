@@ -27,6 +27,10 @@ $ yarn install && yarn bootstrap && yarn build
 $ yarn start
 ```
 
+#deploy
+cd js/packages/web
+yarn deploy
+
 Navigate to `http://localhost:3000/` to explore the deployed application.
 
 ## Rust Programs

@@ -2110,7 +2110,7 @@ const WaitingStep = (props: {
     >
       <Progress type="circle" percent={progress} />
       <div className="waiting-title">
-        Your creation is being listed with Metaplex...
+        Your creation is being listed with ShortGun ...
       </div>
       <div className="waiting-subtitle">This can take up to 30 seconds.</div>
     </div>
@@ -2128,13 +2128,13 @@ const Congrats = (props: {
 
   const newTweetURL = () => {
     const params = {
-      text: "I've created a new NFT auction on Metaplex, check it out!",
+      text: "I've created a new NFT auction on ShortGun, check it out!",
       url: `${
         window.location.origin
       }/#/auction/${props.auction?.auction.toString()}`,
-      hashtags: 'NFT,Crypto,Metaplex',
+      hashtags: 'NFT,Crypto,Shortgun',
       // via: "Metaplex",
-      related: 'Metaplex,Solana',
+      related: 'Shortgun,Solana',
     };
     const queryParams = new URLSearchParams(params).toString();
     return `https://twitter.com/intent/tweet?${queryParams}`;
@@ -2151,7 +2151,7 @@ const Congrats = (props: {
         }}
       >
         <div className="waiting-title">
-          Congratulations! Your auction is now live.
+          Congratulations! Your auction is now live on ShortGun NFTStore.
         </div>
         <div className="congrats-button-container">
           <Button
